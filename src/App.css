@@ -1,38 +1,77 @@
-.App {
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background-color: #151719
+}
+
+.NavigationBar {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  top: 0px;
+  align-items: center;
+  z-index: 100;
+  position: sticky;
+}
+
+.navItems {
+  display: flex;
+  gap: 10px;
+}
+
+.removeLinkWhiteText {
+  text-decoration: none;
+  color: #fff;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  flex-direction: column;
+  gap: 35px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.subText {
+  max-width: 80%;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.buttonContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.ProjectsWrapper {
+  padding-top: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ProjectCard {
+  border-radius: 4px;
+  padding: 24px;
+  min-height: 50vh;
+  background-color: #25282c;
+  border: 1px solid #eaebeba9;
+  gap: 20px;
+}
+
+.ContactCard {
+  background-color: #5658dd;
+  padding: 30px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
 }
