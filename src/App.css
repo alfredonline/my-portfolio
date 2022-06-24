@@ -2,9 +2,8 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
-  background-color: #151719
+  background-color: #151719;
 }
 
 .NavigationBar {
@@ -15,6 +14,7 @@ body {
   align-items: center;
   z-index: 100;
   position: sticky;
+  background-color: #151719;
 }
 
 .navItems {
@@ -31,12 +31,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
+  min-height: 100vh;
   flex-direction: column;
   gap: 35px;
   text-align: center;
 }
-
 
 .subText {
   max-width: 80%;
@@ -47,6 +46,18 @@ body {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Projects,
+.Skills {
+  min-height: 100vh;
+}
+
+.Skills {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
   justify-content: center;
 }
 
@@ -66,12 +77,52 @@ body {
 .ContactCard {
   background-color: #5658dd;
   padding: 30px;
-  font-size: 24px;
-  font-weight: 600;
   color: #fff;
   border-radius: 4px;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
+.contactBtn {
+  font-weight: 600;
+  font-size: 18px;
+  background-color: #3e40b1;
+  height: 40px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  gap: 20px;
+}
+
+.SkillsWrapper {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 30px;
+  margin-top: 20px;
+}
+
+
+.SkillsCard {
+  display: flex;
+  width: 200px;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 12px;
+  color: white;
+  background-color: #25282c;
+  border-radius: 4px;
+  border: 1px solid #eaebeba9;
+  font-weight: 600;
+  font-size: 20px;
 }

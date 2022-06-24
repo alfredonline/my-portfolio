@@ -43,7 +43,7 @@ function Projects() {
   ];
 
   return (
-    <>
+    <div className="Projects">
       <Title text="Projects" />
       <Grid
         container
@@ -67,7 +67,7 @@ function Projects() {
           );
         })}
       </Grid>
-    </>
+    </div>
   );
 }
 

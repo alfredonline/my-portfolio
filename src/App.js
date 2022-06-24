@@ -3,14 +3,13 @@ import Container from "@mui/material/Container";
 import Projects from "./Sections/Projects";
 import Main from "./Sections/Main";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { Typography } from "@mui/material";
 import Skills from "./Sections/Skills";
 import About from "./Sections/About";
 import Contact from "./Sections/Contact";
+import NavbarLgScreen from "./Components/NavbarLgScreen";
+import Title from "./Components/Title";
 
 function App() {
-  const navItems = ["Projects", "Skills", "About", "Contact"];
-
   const theme = createTheme({
     components: {
       MuiButton: {
@@ -67,23 +66,8 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Container maxWidth="lg" sx={{position: "relative"}}>
-        <div className="NavigationBar">
-          <Typography variant="title">AlfieOnline.</Typography>
-          <div className="navItems">
-            {navItems.map((item) => {
-              return (
-                <a
-                  href={`#${item}`}
-                  name={item}
-                  className="removeLinkWhiteText"
-                >
-                  {item}
-                </a>
-              );
-            })}
-          </div>
-        </div>
+      <Container maxWidth="lg" sx={{ position: "relative" }}>
+        <NavbarLgScreen />
         <Main />
         <div id="Projects" name="Projects">
           <Projects />
@@ -101,6 +85,7 @@ function App() {
         <div id="Contact" name="Contact">
           <Contact />
         </div>
+        <br /> <br /> <br />
       </Container>
     </ThemeProvider>
   );

@@ -13,8 +13,9 @@ function Main() {
         Junior, full stack developer (MERN stack) based in Essex
       </Typography>
       <Typography variant="subText" className="subText">
-        I am a passionate web developer focused on creating unique projects that
-        are beneficial to users.
+        I am a passionate web developer based in the UK focused on creating
+        unique projects that help people learn new skills. I use a variety of technologies 
+        to achieve my goals. Welcome to my portfolio.
       </Typography>
       <div className="buttonContainer" style={{ margin: matches && "0 auto" }}>
         <Button variant="ctaMain" startIcon={<GitHubIcon />}>

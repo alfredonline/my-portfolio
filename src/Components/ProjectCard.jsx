@@ -66,7 +66,7 @@ function ProjectCard({ name, tech, desc, ghLink, liveLink }) {
           startIcon={<OpenInNewIcon />}
           sx={{ width: "100%" }}
         >
-          <a href={liveLink} target="_blank" rel="noopener noreferrer"></a>
+          <a href={liveLink} target="_blank" rel="noopener noreferrer" className="removeLinkWhiteText">View Live Site</a>
         </Button>
       </Grid>
     </Grid>

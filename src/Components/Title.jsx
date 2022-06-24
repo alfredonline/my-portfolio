@@ -3,7 +3,7 @@ import React from "react";
 
 function Title({ text }) {
   return (
-    <Typography variant="title">
+    <Typography variant="title" sx={{padding: "20px"}}>
       {text}
     </Typography>
   );
